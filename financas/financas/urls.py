@@ -28,5 +28,6 @@ router.register(r'moeda', MoedaViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
-    path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path(r'o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
