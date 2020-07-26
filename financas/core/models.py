@@ -41,3 +41,7 @@ class Acao(models.Model):
 
     def __str__(self):
         return self.codigo
+
+
+class Receita(models.Model):
+    pass
